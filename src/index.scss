@@ -1,0 +1,15 @@
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+body{
+  background-color:$primaryColor;
+  font-family: 'Montserrat', sans-serif;
+  color:$fourthColor;
+}
+.container{
+  max-width: 1300px;
+}
+h1{
+  color:white;
+  font-weight: $fontSemibold;
+}
+
