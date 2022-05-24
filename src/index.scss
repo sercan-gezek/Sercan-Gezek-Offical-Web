@@ -12,4 +12,28 @@ h1{
   color:white;
   font-weight: $fontSemibold;
 }
+.menu{
+  height:84px;
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  button.menubar{
+    height:54px;
+    background-color:transparent;
+    outline:none;
+    cursor:pointer;
+    padding:5px;
+    margin:0;
+    border:1px solid #FF2E63;
+    border-radius:6px;
+  }
+  .menu-text{
+    display:flex;
+    align-items:Center;
+    p{
+      margin:0 0 0 17px;
+      padding:0;
+    }
+  }
+}
 

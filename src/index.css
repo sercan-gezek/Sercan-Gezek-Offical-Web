@@ -20,4 +20,29 @@ h1 {
   font-weight: 600;
 }
 
+.menu {
+  height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.menu button.menubar {
+  height: 54px;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  margin: 0;
+  border: 1px solid #FF2E63;
+  border-radius: 6px;
+}
+.menu .menu-text {
+  display: flex;
+  align-items: Center;
+}
+.menu .menu-text p {
+  margin: 0 0 0 17px;
+  padding: 0;
+}
+
 /*# sourceMappingURL=index.css.map */
