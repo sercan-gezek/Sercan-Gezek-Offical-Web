@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import {AiOutlineMenu} from "react-icons/ai";
 const Header = () => {
-const[show,setShow]=useState(true);
+const[show,setShow]=useState(false);
     return (
         <div>
             <div className="menu">
@@ -11,9 +11,11 @@ const[show,setShow]=useState(true);
 
                 {
                     show?<div className="menu-text">
+                        <router>
                     <p>ANASAYFA</p>
                     <p>HAKKIMDA</p>
                     <p>BLOG</p>
+                        </router>
                 </div>:null
                 }
             </div>

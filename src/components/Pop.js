@@ -1,4 +1,5 @@
 import {GrClose} from "react-icons/gr";
+
 function Pop (){
     return(
         <div>
@@ -12,4 +13,6 @@ function Pop (){
         </div>
     )
 }
+
 export default Pop;
+

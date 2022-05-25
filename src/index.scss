@@ -209,16 +209,19 @@ button.close{
   }
 }
 .pop{
+  z-index:999;
+  /**position: -webkit-sticky !important;
+  position: sticky !important;
+  **/
+  position:fixed !important;
+  top: 85% !important;
+  right:40px;
   display:flex;
   flex-direction:column;
   align-items:center;
   justify-content:center;
   width:288px;
   height:100px;
-  position:absolute;
-  z-index:10;
-  bottom:30px;
-  right:30px;
   background-color: $fourthColor;
   box-shadow: 0px 9px 4px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -247,3 +250,4 @@ button.close{
 
   }
 }
+.hidden { display:none; }
