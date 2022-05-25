@@ -1,19 +1,28 @@
-function Header (){
-    return(
+import React,{useState} from 'react'
+import {AiOutlineMenu} from "react-icons/ai";
+const Header = () => {
+const[show,setShow]=useState(true);
+    return (
         <div>
             <div className="menu">
-                <button className="menubar">
-                    <img src="https://sercangezek.com/img/align-left.svg" alt=""/>
+                <button className="menubar" onClick={()=>setShow(!show)}>
+                    <AiOutlineMenu />
                 </button>
 
-                <div className="menu-text">
+                {
+                    show?<div className="menu-text">
                     <p>ANASAYFA</p>
                     <p>HAKKIMDA</p>
                     <p>BLOG</p>
-                </div>
+                </div>:null
+                }
             </div>
+
+
+
+
 
         </div>
     )
 }
-export default Header;
+export default Header
