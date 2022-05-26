@@ -1,4 +1,4 @@
-function Blog (){
+function Blogtext (){
     return(
         <div>
             <div className="row mb-5">
@@ -25,4 +25,4 @@ function Blog (){
         </div>
     )
 }
-export default Blog;
+export default Blogtext;
