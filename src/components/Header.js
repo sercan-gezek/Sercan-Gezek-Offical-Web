@@ -18,10 +18,6 @@ const[show,setShow]=useState(false);
                             <Link to="/about">HAKKIMDA</Link>
                             <Link to="/blog">BLOG</Link>
                         </nav>
-
-
-
-
                 </div>:null
                 }
             </div>

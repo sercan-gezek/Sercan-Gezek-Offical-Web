@@ -10,7 +10,9 @@ function Blogtext (){
                         <h6>Bem Metadolojisi</h6>
                         <p>BEM (Block Element Modifier) css metodolojisidir.
                             Bir stil adlandırma kuralıdır. 2009 yılında Yandex...</p>
-                        <span>Devamı</span>
+                        <a href="/detay"><span>Devamı</span></a>
+
+                        
                     </div>
                 </div>
                 <div className="col-lg-6">
@@ -18,7 +20,7 @@ function Blogtext (){
                         <h6>Dom Yapısı</h6>
                         <p>BEM (Block Element Modifier) css metodolojisidir.
                             Bir stil adlandırma kuralıdır. 2009 yılında Yandex...</p>
-                        <span>Devamı</span>
+                        <a href="/detay2"><span>Devamı</span></a>
                     </div>
                 </div>
             </div>
