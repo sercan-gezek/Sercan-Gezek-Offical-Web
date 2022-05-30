@@ -3,7 +3,6 @@ import { Routes, Route, Link } from "react-router-dom";
 import Maintext from "./components/Maintext";
 import Biotext from "./components/Biotext";
 import Works from "./components/Works";
-import Blogtext from "./components/Blogtext";
 import Pop from "./components/Pop";
 import Biodetail from "./components/Biodetail";
 import Blogbox from "./components/Blogbox";
@@ -47,12 +46,17 @@ function Home() {
                         <Maintext/>
                         <Biotext/>
                         <Works/>
-                        <Blogtext/>
+                        <div className="row">
+                            <div className="index-head">
+                                <h3>Blog</h3>
+                            </div>
+                            <Blogbox baslik = "Bem Metadolojisi" icerik = "BEM (Block Element Modifier) css metodolojisidir.
+                        Bir stil adlandırma kuralıdır. 2009 yılında Yandex..." link1 = "Devamı"/>
+                            <Blogbox baslik2 = "React'e Giriş" icerik2 = "test içerik" link2 = "Devamı"/>
+                        </div>
                     </div>
                 </div>
             </div>
-
-
         </>
     );
 }
@@ -92,14 +96,12 @@ function Blog() {
                         </div>
                     </div>
                     <div className="row">
-                        <Blogbox/>
-                        <Blogbox/>
-
-
+                        <Blogbox baslik = "Bem Metadolojisi" icerik = "BEM (Block Element Modifier) css metodolojisidir.
+                        Bir stil adlandırma kuralıdır. 2009 yılında Yandex..." link1 = "Devamı"/>
+                        <Blogbox baslik2 = "React'e Giriş" icerik2 = "test içerik" link2 = "Devamı"/>
                     </div>
                 </div>
             </div>
-
         </>
     );
 }

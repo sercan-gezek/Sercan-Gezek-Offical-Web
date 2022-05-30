@@ -1,28 +1,22 @@
+import React,{useState} from 'react';
 import {GrClose} from "react-icons/gr";
+const Pop = () => {
+    const[show,setShow]=useState(true);
 
-function Pop (){
     return(
-        <div>
+        <div>{
+            show?
             <div className="pop" id="popDiv">
                 <p>hi@sercangezek.com</p>
                 <span>adresinden bana ulaşabilirsiniz.</span>
-                <button className="pop-close" onClick="hideFunction()">
+                <button className="pop-close" onClick={()=>setShow(!show)}>
                     <GrClose />
                 </button>
-            </div>
+            </div>:null
+        }
         </div>
     )
 }
-function hideFunction() {
-    var x = document.getElementById("popDiv");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-
-
 
 export default Pop;
 

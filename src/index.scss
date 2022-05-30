@@ -207,13 +207,14 @@ button.close{
     font-size:12px;
     font-weight:$fontRegular;
   }
-  span{
+  a{
     position:absolute;
     right:22px;
     bottom:17px;
     font-size:12px;
     color:$thirdColor;
     font-weight:$fontBold;
+    text-decoration:none;
   }
 }
 .pop{
