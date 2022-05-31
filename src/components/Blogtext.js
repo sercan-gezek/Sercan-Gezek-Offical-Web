@@ -1,3 +1,6 @@
+import React from "react";
+import {Link} from "react-router-dom";
+
 function Blogtext (){
     return(
         <div>
@@ -10,7 +13,10 @@ function Blogtext (){
                         <h6>Bem Metadolojisi</h6>
                         <p>BEM (Block Element Modifier) css metodolojisidir.
                             Bir stil adlandırma kuralıdır. 2009 yılında Yandex...</p>
-                        <a href="/detay"><span>Devamı</span></a>
+
+                        <Link to="/Detay">
+                            <span>Devamı</span>
+                        </Link>
 
                         
                     </div>
@@ -20,7 +26,9 @@ function Blogtext (){
                         <h6>Dom Yapısı</h6>
                         <p>BEM (Block Element Modifier) css metodolojisidir.
                             Bir stil adlandırma kuralıdır. 2009 yılında Yandex...</p>
-                        <a href="/detay2"><span>Devamı</span></a>
+                        <Link to="/Detay2">
+                            <span>Devamı</span>
+                        </Link>
                     </div>
                 </div>
             </div>

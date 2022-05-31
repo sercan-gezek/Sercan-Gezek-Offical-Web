@@ -1,5 +1,7 @@
+import React from "react";
+
 import Header from './components/Header';
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Maintext from "./components/Maintext";
 import Biotext from "./components/Biotext";
 import Works from "./components/Works";
@@ -88,16 +90,15 @@ function Blog() {
                             <h1>SERCAN GEZEK</h1>
                         </div>
                         <div className="image-content">
-                            <img src="http://www.sercangezek.com/blog-profile.png" alt=""/>
+                            <img src={require('./img/blog-profile.png')} alt=""/>
                         </div>
                         <div className="index-head">
                             <h3>Blog</h3>
                         </div>
                     </div>
                     <div className="row">
-                        <Blogbox baslik = "Bem Metadolojisi" icerik = "BEM (Block Element Modifier) css metodolojisidir.
-                        Bir stil adlandırma kuralıdır. 2009 yılında Yandex..." link1 = "Devamı"/>
-                        <Blogbox baslik2 = "React'e Giriş" icerik2 = "test içerik" link2 = "Devamı"/>
+                        <Blogbox baslik = "Bem Metadolojisi" icerik = "BEM (Block - Element - Modifier) metodolojisi scalable ve maintain edilebilir css yazmak yandex için tarafından ortaya atılan isimlendirme standartıdır..." link1 = "Devamı"/>
+                        <Blogbox baslik2 = "React'e Giriş" icerik2 = "React.js uzantısından da anlaşılacağı üzere Javascript üzerine kurulmuştur. Yazılım geliştirici açısından tekrar okunabilir ve üzerinde kolay geliştirme yapılabilir bir sistemdir..." link2 = "Devamı"/>
                     </div>
                 </div>
             </div>
@@ -155,11 +156,11 @@ function Detay2() {
                     <div className="col-lg-12">
                         <div className="blog-head">
                             <div className="blog-detail-head">
-                                <h3>asda Nedir?</h3>
+                                <h3>React Nedir?</h3>
                             </div>
                         </div>
                         <div className="image-content">
-                            <img src="http://www.sercangezek.com/react-img.png" alt=""/>
+                            <img src={require('./img/react-img.png')} alt=""/>
                         </div>
                     </div>
                     <div className="col-lg-12">

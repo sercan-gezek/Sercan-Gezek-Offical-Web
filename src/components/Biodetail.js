@@ -1,6 +1,8 @@
+import React from "react";
 import {DiSass} from "react-icons/di";
 import {FaReact, FaVuejs} from "react-icons/fa";
 import {CgFigma} from "react-icons/cg";
+
 
 function Biodetail() {
     return(
@@ -9,7 +11,7 @@ function Biodetail() {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-3 col-12">
-                            <img src="https://sercangezek.com/profile-sg.png" alt=""/>
+                            <img src={require('../img/profile-sg.png')} className="img-fluid" alt=""/>
                         </div>
                         <div className="col-lg-9 col-12">
                             <p>Teknoloji ile tanışmam 2006 yılında windows platformda HTML kodları yazarak ve tasarım programları kullanarak başladı. Hobi olarak başladığım bu yolculuğu profesyonelleştirmek adına Türkiye'nin en iyi eğitim kurumlarının birinde eğitim aldım. <br/><br/>

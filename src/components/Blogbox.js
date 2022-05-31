@@ -1,3 +1,6 @@
+import React from "react";
+import {Link} from 'react-router-dom'
+
 function Blogbox(props) {
     return(
             <div className="col-lg-6">
@@ -5,14 +8,14 @@ function Blogbox(props) {
                     <h3>{props.baslik} {props.baslik2}</h3>
                     <p>{props.icerik} {props.icerik2}</p>
                     <span>
-                        <a href="/Detay">
+                        <Link to="/Detay">
                             {props.link1}
-                        </a>
+                        </Link>
                     </span>
                     <span>
-                        <a href="/Detay2">
+                        <Link to="/Detay2">
                             {props.link2}
-                        </a>
+                        </Link>
                     </span>
                 </div>
             </div>
