@@ -50,9 +50,8 @@ function Home() {
                             <div className="index-head">
                                 <h3>Blog</h3>
                             </div>
-                            <Blogbox baslik = "Bem Metadolojisi" icerik = "BEM (Block Element Modifier) css metodolojisidir.
-                        Bir stil adlandırma kuralıdır. 2009 yılında Yandex..." link1 = "Devamı"/>
-                            <Blogbox baslik2 = "React'e Giriş" icerik2 = "test içerik" link2 = "Devamı"/>
+                            <Blogbox baslik = "Bem Metadolojisi" icerik = "BEM (Block - Element - Modifier) metodolojisi scalable ve maintain edilebilir css yazmak yandex için tarafından ortaya atılan isimlendirme standartıdır..." link1 = "Devamı"/>
+                            <Blogbox baslik2 = "React'e Giriş" icerik2 = "React.js uzantısından da anlaşılacağı üzere Javascript üzerine kurulmuştur. Yazılım geliştirici açısından tekrar okunabilir ve üzerinde kolay geliştirme yapılabilir bir sistemdir..." link2 = "Devamı"/>
                         </div>
                     </div>
                 </div>
@@ -119,18 +118,26 @@ function Detay() {
                         </div>
                         </div>
                         <div className="image-content">
-                            <img src="http://www.sercangezek.com/react-img.png" alt=""/>
+                            <img src="http://www.sercangezek.com/blog-profile.png" alt=""/>
                         </div>
                     </div>
                         <div className="col-lg-12">
                             <div className="blog-detail-content">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                                    <br/> <br/>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                                    <br/> <br/>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                                    <br/> <br/>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                <p>
+                                    BEM (Block - Element - Modifier) metodolojisi scalable ve maintain edilebilir css yazmak yandex için tarafından ortaya atılan isimlendirme standartıdır. BEM'in temeli component bazlı ve tekrar kullanılabilir css kodu yazmaya dayanır.
+
+                                    İsimlendirme programlama dünyasında her zaman zor ve kafa karıştırcı olmuştur. Hal böyle olunca zaman zaman bu konuyu ihmal edebiliyoruz. Bu da uzun vadede kodumuzun kalitesini ve okunabilirliğini olumsuz etkileyebilir. Özellikle css yazarken gerekli özveriyi göstermediğimiz durumlarda code base'imiz çöplüğe dönüşebiliyor. BEM daha okunabilir, yönetilebilir ve HTML ile doğrudan ilişkili CSS kodu yazmak için uyguladığımız metodolojidir.
+                                    <br/><br/>
+                                    BEM Block, Element, Modifier olmak üzere 3 adet konsepte dayanır. Bu konseptleri kısaca açıklayalım.
+                                    <br/><br/>
+                                    Block: Uygulamanızdaki yeniden kullanılabilir bileşen topluluğudur. Örneğin card, footer, menu, form block grubuna dahil edilebilir.
+                                    <br/><br/>
+                                    Element: Block içerisinde bulunan ve block'tan ayrı kullanılmayan child bileşenlerdir. Element oluşturmak için iki adet alt çizgi kullanılır. Örneğin .card__image, .menu__item, .form__label gibi...
+                                    <br/><br/>
+                                    Modifier: Block veya Element'lerin farklı varyasyonlarını üretmek için kullanılır. Modifier oluşturmak için iki kısa çizgi kullanılır. Örneğin .card--vertical, .menu__item--active gibi...
+                                    <br/><br/>
+                                    Formülize edecek olursak BEM metodolojisine uygun bir element .[block]__[element]--[modifier] şeklinde isimlendirilebilir.
+                                    <br/><br/>
                                 </p>
                         </div>
                     </div>
@@ -157,13 +164,15 @@ function Detay2() {
                     </div>
                     <div className="col-lg-12">
                         <div className="blog-detail-content">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            <p>React.js uzantısından da anlaşılacağı üzere Javascript üzerine kurulmuştur. Yazılım geliştirici açısından tekrar okunabilir ve üzerinde kolay geliştirme yapılabilir bir sistemdir.
                                 <br/> <br/>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                Komponent yapısı sayesinde kod tekrarını önler kullanıcı tarafında gözle görülür farklar ortaya çıkar.
                                 <br/> <br/>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                React.js kullanmıyorsanız web siteniz DOM'u güncellemek için HTML kullanır. Yüksek trafikli web sitelerinde HTML DOM kullanmak büyük maliyetlere sebep olur.
                                 <br/> <br/>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                React.js Virtual Dom yapısı sadece güncellenecek kısmı yeniler, bütün sayfayı yenilemek küçük bir alanı yenilemekten çok daha performanslı ve düşük maliyetlidir.
+                                <br/> <br/>
+                                React.js'in çok fazla avantajı bulunmaktadır ama her web projesinde kullanılması gerekmez, örneğin düşük trafikli basit tanıtım sitelerinde React.js kullanmanın çok fazla bir artısı yoktur, yüksek trafikli etkileşimi yüksek web sayfalarında artık olmazsa olmaz bir durum teşkil etmektedir.
                             </p>
                         </div>
                     </div>

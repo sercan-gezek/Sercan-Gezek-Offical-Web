@@ -21,11 +21,6 @@ const[show,setShow]=useState(false);
                 </div>:null
                 }
             </div>
-
-
-
-
-
         </div>
     )
 }
